@@ -68,13 +68,5 @@ def recognition(texter):
         return results, plates
     else:
         print(plates[0][-1])
-        # win1name = "Plate"
-        # win2name = "Warning"
-        # cv2.namedWindow(win1name)  # Create a named window
-        # cv2.namedWindow(win2name)  # Create a named window
-        # cv2.moveWindow(win1name, 200, 150)  # Move it to (x,y)
-        # cv2.moveWindow(win2name, 702, 150)  # Move it to (40,30)
-        # cv2.imshow(win1name, res2)
-        # cv2.imshow(win2name, res3)
         cv2.waitKey(0)
         return results, plates
