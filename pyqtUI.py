@@ -1,7 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import random
-import cv2
-from database_recognition import recognition
+from database_recognition import *
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("TRAFFIC TRACK SYSTEM")
@@ -47,13 +46,3 @@ class Ui_MainWindow(object):
         cv2.imshow("X", results[0])
         print(plates[0][1])
         self.photo.setPixmap(QtGui.QPixmap(randomImage))
-
-
-# if __name__ == "__main__":
-#     import sys
-#     app = QtWidgets.QApplication(sys.argv)
-#     MainWindow = QtWidgets.QMainWindow()
-#     ui = Ui_MainWindow()
-#     ui.setupUi(MainWindow)
-#     MainWindow.show()
-#     sys.exit(app.exec())
