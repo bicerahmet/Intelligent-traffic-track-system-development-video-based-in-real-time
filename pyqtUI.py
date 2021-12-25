@@ -1,4 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
+import random
+from database_recognition import *
 from PyQt5.QtGui import *
 
 from database_recognition import recognition
