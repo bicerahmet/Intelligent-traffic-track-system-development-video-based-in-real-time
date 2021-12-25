@@ -49,7 +49,7 @@ def recognition(texter):
     mydb = mysql.connector.connect(
         host='localhost',
         user='root',
-        password='A9764331!z976431',
+        password='A976431!z976431',
         port='3306',
         database='python_video'
     )
@@ -58,7 +58,6 @@ def recognition(texter):
     plates = mycursor.fetchall()
 
     imgEmergency = cv2.imread("Resources/emergency.jpg")
-    # cv2.putText(imgEmergency, plates[0][-1], (15, 30), cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 0), 3)
     res2 = cv2.resize(img, (WIDTH, HEIGHT), SCALE_X, SCALE_Y, interpolation=cv2.INTER_AREA)
     res3 = cv2.resize(imgEmergency, (WIDTH, HEIGHT), SCALE_X, SCALE_Y, interpolation=cv2.INTER_AREA)
     results = res2, res3
