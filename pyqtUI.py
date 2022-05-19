@@ -6,7 +6,6 @@ from PyQt5.QtGui import *
 from database_recognition import recognition
 import random
 
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("TRAFFIC TRACK SYSTEM")
